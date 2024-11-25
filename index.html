@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.starxwears.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" width="125px">
+            </div>
+            <nav>
+            <ul id="MenuItems">
+                   <li><a href="index.html">Home</a></li>
+                
+                   <li><a href="">About</a></li>
+                   <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <select id="product-filter" onchange="navigateToPage()">
+                <option value="">Select Category</option>
+                <option value="shirts.html">Casuals</option>
+                <option value="basketball.html">Basketball Jersey</option>
+                <option value="cycling.html">Cycling Wears</option>
+                <option value="gloves.html">Gloves</option>
+                <option value="shorts.html">Shorts</option>
+                <option value="yoga.html">yoga & Bra</option>
+            </select>
+            
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <h1>Give Your Workout<br>A New Style!</h1>
+                <p>Success isn't always about greatness. It's about consistency. Consistent<br>hard work gains success. Greatness will come.</p>
+                <a href="" class="btn">Explore Now &#8594;</a>
+            </div>
+            <div class="col-2">
+                <img src="images/image1.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Featured categories -->
+<div class="categories">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <img src="images/YYY.png">
+            </div>
+            <div class="col-3">
+                <img src="images/EE.png">
+            </div>
+            <div class="col-3">
+                <img src="images/ZZ.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Featured product -->
+<div class="small-container">
+    <h2 class="title">Featured Products</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="images/AABID.jpg">
+            <h4>StarX Wears</h4>
+            <a href="https://www.instagram.com/starxwears" class="btn add-to-cart">DM Us</a>
+        </div>
+        <!-- Add more products here -->
+        <div class="col-4">
+            <img src="images/VV.png">
+            <h4>StarX Wears</h4>
+            <a href="https://www.instagram.com/starxwearsl" class="btn add-to-cart">DM Us</a>
+        </div>
+        <div class="col-4">
+            <img src="images/Y.jpg">
+            <h4>StarX Wears</h4>
+            <a href="https://www.instagram.com/starxwears" class="btn add-to-cart">DM Us</a>
+        </div>
+        <div class="col-4">
+            <img src="images/HH.jpg">
+            <h4>StarX Wears</h4>
+            <a href="https://www.instagram.com/starxwears" class="btn add-to-cart">DM Us</a>
+        </div>
+    </div>
+
+    <!-- Latest Products -->
+    <h2 class="title">Latest Products</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="images/TYU.png">
+            <h4>StarX Wears</h4>
+            <a href="https://www.instagram.com/starxwears" class="btn add-to-cart">DM Us</a>
+        </div>
+        <div class="col-4">
+            <img src="images/1.png">
+            <h4>StarX Wears</h4>
+            <a href="https://www.instagram.com/starxwears" class="btn add-to-cart">DM Us</a>
+        </div>
+        <div class="col-4">
+            <img src="images/2.png">
+            <h4>StarX Wears</h4>
+            <a href="https://www.instagram.com/starxwears" class="btn add-to-cart">DM Us</a>
+        </div>
+        <div class="col-4">
+            <img src="images/3.png">
+            <h4>StarX Wears</h4>
+            <a href="https://www.instagram.com/starxwears" class="btn add-to-cart">DM Us</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <img src="images/4.png">
+            <h4>StarX Wears</h4>
+            <a href="https://www.instagram.com/starxwears" class="btn add-to-cart">DM Us</a>
+        </div>
+        <div class="col-4">
+            <img src="images/5.png">
+            <h4>StarX Wears</h4>
+            <a href="https://www.instagram.com/starxwears" class="btn add-to-cart">DM Us</a>
+        </div>
+        <div class="col-4">
+            <img src="images/6.png">
+            <h4>StarX Wears</h4>
+            <a href="https://www.instagram.com/starxwears" class="btn add-to-cart">DM Us</a>
+        </div>
+        <div class="col-4">
+            <img src="images/7.png">
+            <h4>StarX Wears</h4>
+            <a href="https://www.instagram.com/starxwears" class="btn add-to-cart">DM Us</a>
+        </div>
+    </div>
+</div>
+
+<!-- Offers -->
+<div class="offer">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/RATA.png" class="offer-img">
+            </div>
+            <div class="col-2">
+                <p>Exclusively Available on StarX Wears</p>
+                <h1>Men GYM Sleeveless Hoodie</h1>
+                <small>Men Gym Sleeveless Hoodie Fitness Sports Muscle Hooded Vest T-Shirt </small>
+                <a href="https://www.instagram.com/starxwears" class="btn">Buy Now DM me on Instagram &#8594;</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Brands -->
+<div class="brands">
+    <div class="small-container">
+        <div class="row">
+            <!-- Payments method img -->
+            <div class="col-5">
+                <img src="images/logo-paypal.png">
+            </div>
+            <div class="col-5">
+                <img src="images/logo-godrej.png">
+            </div>
+            <div class="col-5">
+                <img src="images/logo-philips.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Available On</h3>
+                <p>Visit website through their link on Instagram page also visit on Facebook for more info</p>
+                <i class="fa fa-instagram" style="font-size:40px;color:red"></i>
+                <i class="fa fa-facebook-f" style="font-size:40px;color:rgb(54, 73, 242)"></i>
+            </div>
+            <div class="footer-col-2">
+                <h1>STARX WEARS</h1>
+                <p>Our Purpose is Export and deliver Product to the customer</p>
+            </div>
+            <div class="footer-col-3">
+                <!-- Some changes in links -->
+                <h3>Useful Links</h3>
+               <ul>
+                <li>INSTAGRAM</li>
+                <li>WHATSAPP</li>
+                <li>FACEBOOK</li>
+               </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+               <ul>
+                <li>INSTAGRAM</li>
+                <li>WHATSAPP</li>
+                <li>FACEBOOK</li>
+               </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Developed By STARX WEARS 2005</p>
+    </div>
+</div>
+
+
+
+<!-- JS for toggle menu -->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if (MenuItems.style.maxHeight === "0px") {
+            MenuItems.style.maxHeight = "200px";
+        } else {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+
+    function navigateToPage() {
+        var select = document.getElementById("product-filter");
+        var value = select.value;
+        if (value) {
+            window.location.href = value;
+        }
+    }
+</script>
+<script src="java.js"></script>
+<a href="https://wa.me/03171860675" class="whatsapp-float" target="_blank">
+    <i class="fa fa-whatsapp" style="font-size: 40px; color: white;"></i>
+</a>
+
+</body>
+</html>

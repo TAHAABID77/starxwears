@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - StarX Wears</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" width="125px">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+               
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+</div>
+
+<div class="small-container">
+    <div class="row row-2">
+        <h2>STARX WEARS</h2>
+        <h2>Casuals</h2>
+        <select id="product-filter" onchange="navigateToPage()">
+            <option value="">Select Category</option>
+            <option value="shirts.html">Casuals</option>
+            <option value="basketball.html">Basketball Jersey</option>
+            <option value="cycling.html">Cycling Wears</option>
+            <option value="gloves.html">Gloves</option>
+            <option value="shorts.html">Shorts</option>
+            <option value="yoga.html">Yoga & Bra</option>
+            <!-- Additional option -->
+           
+        </select>
+    </div>
+    
+    <div class="row">
+        <div class="col-4">
+            <img src="images/HH.jpg">
+            <h4>StarX Wears</h4>
+            <a href="https://www.instagram.com/starxwears" class="btn add-to-cart">DM Us</a>
+        </div>
+        <div class="col-4">
+            <img src="images/1.png">
+            <h4>StarX Wears</h4>
+            <a href="https://www.instagram.com/starxwears" class="btn add-to-cart">DM Us</a>
+        </div>
+        <div class="col-4">
+            <img src="images/Black shirty.png">
+            <h4>StarX Wears</h4>
+            <a href="https://www.instagram.com/starxwears" class="btn add-to-cart">DM Us</a>
+        </div>
+        <div class="col-4">
+            <img src="images/POLO name.png">
+            <h4>StarX Wears</h4>
+            <a href="https://www.instagram.com/starxwears" class="btn add-to-cart">DM Us</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <img src="images/Sport black whit.png">
+            <h4>StarX Wears</h4>
+            <a href="https://www.instagram.com/starxwears" class="btn add-to-cart">DM Us</a>
+        </div>
+        <div class="col-4">
+            <img src="images/BLUE.png">
+            <h4>StarX Wears</h4>
+            <a href="https://www.instagram.com/starxwears" class="btn add-to-cart">DM Us</a>
+        </div>
+        <div class="col-4">
+            <img src="images/33.png">
+            <h4>StarX Wears</h4>
+            <a href="https://www.instagram.com/starxwears" class="btn add-to-cart">DM Us</a>
+        </div>
+        <div class="col-4">
+            <img src="images/GYM1.png">
+            <h4>StarX Wears</h4>
+            <a href="https://www.instagram.com/starxwears" class="btn add-to-cart">DM Us</a>
+        </div>
+        <!-- Additional images -->
+    </div>
+</div>
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Available On</h3>
+                <p>Visit website through their link on Instagram page also visit on Facebook for more info</p>
+                <i class="fa fa-instagram" style="font-size:40px;color:red"></i>
+                <i class="fa fa-facebook-f" style="font-size:40px;color:rgb(54, 73, 242)"></i>
+            </div>
+            <div class="footer-col-2">
+                <h1>STARX WEARS</h1>
+                <p>Our Purpose is Export and deliver Product to the customer</p>
+            </div>
+            <div class="footer-col-3">
+                <!-- Some changes in links -->
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>INSTAGRAM</li>
+                    <li>WHATSAPP</li>
+                    <li>FACEBOOK</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>INSTAGRAM</li>
+                    <li>WHATSAPP</li>
+                    <li>FACEBOOK</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Developed By STARX WEARS 2005</p>
+    </div>
+</div>
+
+<!-- JS for toggle menu -->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle() {
+        if (MenuItems.style.maxHeight === "0px") {
+            MenuItems.style.maxHeight = "200px";
+        } else {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+
+    function navigateToPage() {
+        var select = document.getElementById("product-filter");
+        var value = select.value;
+        if (value) {
+            window.location.href = value;
+        }
+    }
+</script>
+</body>
+</html>
